@@ -64,4 +64,56 @@ for (let i = 1; i <= 20; i++) {
     }
   }
 
+console.log("");
+  console.log("EXERCISE 05");
+  console.log("");
+
+function findMaxMinSums(array) {
+    let max = array[0];
+    let min = array[0];
+    let sum = array[0];
+
+    for (let i = 1; i < array.length; i++) {
+      if (array[i] > max) {
+      max = array[i];
+    }
+      if (array[i] < min) {
+      min = array[i];
+    }
+    sum += array[i];
+  }
+
+  return `Max: ${max}, Min: ${min}, Sum: ${sum}`;
+}
+
+let arrayOfNumbers = [1, 5, 12, 31, 56];
+let resultSumMaxMinNumber = findMaxMinSums(arrayOfNumbers);
+console.log(resultSumMaxMinNumber);
+
+
+console.log("");
+console.log("EXERCISE 06");
+console.log("");
+
+function combineNamesWithSurnames(firstNames, lastNames) {
+    if (firstNames.length !== lastNames.length) {
+      return "Arrays must have the same length";
+  }
+
+    let fullNames = [];
+
+    for (let i = 0; i < firstNames.length; i++) {
+      let fullName = `${firstNames[i]} ${lastNames[i]}`;
+      fullNames.push(fullName);
+  }
+
+    return fullNames;
+}
+
+let firstNames = ["Bob", "Jill", "Matej"];
+let lastNames = ["Gregory", "Wurtz", "Mateovski"];
+const resultOfNamesAndSurnames = combineNamesWithSurnames(firstNames, lastNames);
+console.log(resultOfNamesAndSurnames);
+
+
 
