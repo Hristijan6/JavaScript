@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Web Calculator</title>
+</head>
+<body>
+    
+
+<div id="container" class="calculator">
+    <div class="display item"  id="displayScreen">0</div>
+
+      <button class="button buttonReset" id="buttonReset" onclick="clearDisplay()">C</button>
+      <button class="button buttonDot" id="buttonDot" onclick="appendToDisplay('.')">.</button>
+      <button class="button buttonEquals orange" id="buttonEquals" onclick="calculateResult()">=</button>
+      <button class="button operation orange" id="buttonPlus">+</button>
+      <button class="button operation orange" id="buttonMultiply">*</button>
+      <button class="button operation orange" id="buttonDivide">/</button>
+      <button class="button button1 number" id="button1">1</button>
+      <button class="button button7 number" id="button7">7</button>
+      <button class="button button2 number" id="button2">2</button>
+      <button class="button button3 number" id="button3">3</button>
+      <button class="button button4 number" id="button4">4</button>
+      <button class="button button5 number" id="button5">5</button>
+      <button class="button button6 number" id="button6">6</button>
+      <button class="button button8 number" id="button7">8</button>
+      <button class="button button9 number" id="button9">9</button>
+      <button class="button button0 number" id="button0">0</button>
+      <button class="button operation orange" id="buttonMinus">-</button>
+      <button class="button buttonDelete" id="buttonDelete">&larr;</button>
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
